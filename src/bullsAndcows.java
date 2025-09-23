@@ -104,7 +104,7 @@ public class bullsAndcows {
         return seen.size() != 4;
     }
 
-    // Подсчёт быков (правильная цифра и позиция)
+    // Подсчёт быков
     private static int countBulls(String secret, String guess) {
         int bulls = 0;
         for (int i = 0; i < 4; i++) {
@@ -113,7 +113,7 @@ public class bullsAndcows {
         return bulls;
     }
 
-    // Подсчёт числа совпадающих цифр (включая быков)
+    // Подсчёт совпадающих цифр
     private static int countCows(String secret, @org.jetbrains.annotations.NotNull String guess) {
         int count = 0;
         for (char c : guess.toCharArray()) {
